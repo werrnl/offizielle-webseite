@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qdc6hbu.css">
+    <title>Carworld-Switzerland</title>
+  </head>
+  <body>
+      <div class="topic-service">
+          <nav>
+              <a href="../1-Webseite/index.html"><img class="logo" src="../1-Webseite/img/logo.png"></a>
+              <ul>
+                  <li><a href="../1-Webseite/services.html">Services</a></li>
+                  <li><a href="../1-Webseite/photography.html">Photography</a></li>
+                  <li><a href="../1-Webseite/contact.html">Contact</a></li>
+              </ul>
+              <a href="http://www.instagram.com/carworld_switzerland" class="button" target="_blank">Subscribe</a>
+          </nav>
+
+      </div>
+      
+      <div class="container-slider">
+        <div class="title-slider">
+            Before-After Image Slider
+        </div>
+        <h4 class="h4-editing">Audi S3</h4>
+        <center><div class="compare">
+            <div class="before">
+                <div class="after"></div>
+            </div>
+            <input type="range" min="0" max="640" step="10" id="compare-ip">
+        </div></center>
+
+        
+      </div>
+
+      <script language="javascript" type="text/javascript">
+        document.querySelector(".compare #compare-ip").addEventListener("input",function(e){
+        document.querySelector(".compare .before .after").style.width = (+e.target.value) + "px";
+        });
+      </script>
+
+
+  </body>
+</html>

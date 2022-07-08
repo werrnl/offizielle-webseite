@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qdc6hbu.css">
+    <title>Carworld-Switzerland</title>
+  </head>
+  <body>
+      <div class="topic-contact">
+          <nav>
+              <a href="../1-Webseite/index.html"><img class="logo" src="../1-Webseite/img/logo.png"></a>
+              <ul>
+                  <li><a href="../1-Webseite/services.html">Services</a></li>
+                  <li><a href="../1-Webseite/photography.html">Photography</a></li>
+                  <li><a href="../1-Webseite/contact.html">Contact</a></li>
+              </ul>
+              <a href="http://www.instagram.com/carworld_switzerland" class="button" target="_blank">Subscribe</a>
+          </nav>
+
+
+
+          <section>
+    
+            <div class="section-header">
+              <div class="container">
+                <h2>Contact Us</h2>
+                <p>Haben Sie Fragen oder möchten Sie uns ein Feedback geben? Genau hier können Sie uns eine
+                  Nachricht schreiben. Wir freuen uns natürlich stets auf ein positives Feedback von Ihnen.
+                </p>
+              </div>
+            </div>
+            
+            <div class="container">
+              <div class="row">
+                
+                <div class="contact-info">
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-home"></i>
+                    </div>
+                    
+                    <div class="contact-info-content">
+                      <h4>Address</h4>
+                      <p>Zürich, Switzerland,<br/> 8172 Niederglatt</p>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    
+                    <div class="contact-info-content">
+                      <h4>Phone</h4>
+                      <p>079 243 01 46</p>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="contact-info-content">
+                      <h4>Email</h4>
+                     <p>lenny.werrn@bluewin.ch</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="contact-form">
+                  <form action="mailto:lenny.werrn@bluewin.ch" method="POST" id="contact-form" enctype="multipart/form-data" name="EmailForm">
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                      <input id="name" type="text" required="true" name="">
+
+                      <span id="nameLabel">Full Name</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <input type="email" id="email" required="true" name="">
+                      <span id="emailLabel">Email</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <textarea required="true" id="message" name=""></textarea>
+                      <span id="messageLabel">Type your Message...</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <input type="submit" value="Send" name="">
+                    </div>
+                  </form>
+                </div>
+
+                <script>
+                  function attackBlur(id) {
+                    element = document.getElementById(id)
+                    element.addEventListener('blur', (event) => {
+                      hideIfFilled(id) // event.target)
+                    })
+                  }
+                  function hideIfFilled(id) {
+                    element = document.getElementById(id)
+                    if (element.value !== '') {
+                      console.log(element)
+                      span = document.getElementById(id + "Label")
+                      console.log(span)
+                      span.style.color = "#56c1e0";
+                      span.style.fontSize = "12px";
+                      span.style.transform = "translateY(-20px)";
+                    }
+                  }
+                  attackBlur("name");
+                  attackBlur("email");
+                  attackBlur("message");
+                  
+                </script>
+                
+              </div>
+            </div>
+          </section>
+
+
+
+      </div>
+        
+
+  
+  </body>
+</html>
